@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangari Charan Teja | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:radial-gradient(circle at top, #1a1400, #070500 65%);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===== INTRO ===== */
+#intro{
+    position:fixed;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#050400;
+    z-index:9999;
+}
+#intro h1{
+    font-size:3.5rem;
+    letter-spacing:4px;
+    color:#ffd700;
+    text-shadow:0 0 25px #ffd700, 0 0 50px #ffae00;
+    animation:introPulse 2s ease;
+}
+@keyframes introPulse{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* ===== STARS ===== */
+.star{
+    position:fixed;
+    width:6px;
+    height:6px;
+    background:#ffd700;
+    border-radius:50%;
+    box-shadow:0 0 15px #ffd700;
+    pointer-events:none;
+    animation:starAnim 1s linear forwards;
+}
+@keyframes starAnim{
+    to{transform:translateY(-60px) scale(0); opacity:0;}
+}
+
+/* ===== CONTAINER ===== */
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:50px 24px;
+    opacity:0;
+    animation:showContent 1s ease forwards;
+    animation-delay:2s;
+}
+@keyframes showContent{to{opacity:1;}}
+
+/* ===== HERO ===== */
+.hero{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    padding:60px;
+    border-radius:30px;
+    background:linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.04));
+    backdrop-filter:blur(20px);
+    box-shadow:0 40px 100px rgba(0,0,0,0.7);
+}
+
+/* ===== PHOTO (STATIC) ===== */
+.avatar-wrap{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    padding:8px;
+    background:linear-gradient(135deg,#ffd700,#ffae00);
+    box-shadow:0 0 45px rgba(255,215,0,0.9);
+}
+.avatar{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    overflow:hidden;
+}
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+}
+
+/* ===== HERO TEXT ===== */
+.hero-text h1{
+    font-size:3.5rem;
+    background:linear-gradient(90deg,#ffd700,#ffae00);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.hero-text h2{
+    font-weight:400;
+    margin-top:8px;
+}
+.hero-text p{
+    margin-top:14px;
+    opacity:0.85;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    margin-top:60px;
+    padding:40px;
+    border-radius:26px;
+    background:linear-gradient(135deg, rgba(255,215,0,0.12), rgba(255,215,0,0.04));
+    backdrop-filter:blur(18px);
+    box-shadow:0 30px 80px rgba(0,0,0,0.6);
+}
+section h3{
+    color:#ffd700;
+    margin-bottom:20px;
+    font-size:1.4rem;
+}
+
+/* ===== GRID ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+/* ===== CARD ===== */
+.card{
+    padding:25px;
+    border-radius:20px;
+    background:rgba(0,0,0,0.55);
+    transition:0.4s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 80px rgba(255,215,0,0.35);
+}
+
+/* ===== SKILLS ===== */
+.skills span{
+    display:inline-block;
+    margin:8px;
+    padding:12px 20px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#ffd700,#ffae00);
+    color:#000;
+    font-weight:600;
+    font-size:0.85rem;
+}
+
+/* ===== LIST ===== */
+ul{
+    padding-left:20px;
+}
+ul li{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    margin-top:60px;
+    opacity:0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="intro">
+    <h1>CHARAN BANGARI</h1>
+</div>
+
+<div class="container">
+
+<div class="hero">
+    <div class="avatar-wrap">
+        <div class="avatar">
+            <img src="https://drive.google.com/thumbnail?id=1QoLIXNQl56S98TMNZZYSkK-dCXINrWoX&sz=w1200">
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <h1>BANGARI CHARAN TEJA</h1>
+        <h2>Computer Science & Engineering</h2>
+        <p>Kothawada, Warangal | 📞 9676921820 | ✉️ bangari.charanteja@gmail.com</p>
+    </div>
+</div>
+
+<section>
+<h3>Career Objective</h3>
+<p>
+I am seeking an entry-level job to kickstart my career. I want to grow both professionally and personally
+while contributing to the company’s success and goals. I’m looking for a lively organization that explores
+new areas of work and offers stability.
+</p>
+</section>
+
+<section>
+<h3>Education</h3>
+<div class="grid">
+<div class="card">
+<strong>SR University</strong><br>
+Bachelor of Technology – CSE<br>
+2023 – Present<br>
+CGPA: 6.5
+</div>
+<div class="card">
+<strong>Sr Prime Junior College</strong><br>
+Intermediate – 2020<br>
+Overall Percentage: 72%
+</div>
+<div class="card">
+<strong>Krishnaveni Talent School</strong><br>
+SSC – 2018<br>
+Overall CGPA: 7.3
+</div>
+</div>
+</section>
+
+<section>
+<h3>Projects</h3>
+<div class="grid">
+<div class="card">
+<strong>Wearable IoT Based Real-Time Health Monitoring</strong><br><br>
+ESP32-based system using pulse, ECG, body temperature, blood pressure sensors with ThingSpeak cloud integration.
+</div>
+<div class="card">
+<strong>Drowsiness Detection and Alert System</strong><br><br>
+Machine learning system that detects driver fatigue and alerts the driver to prevent accidents.
+</div>
+<div class="card">
+<strong>Soil Nutrients Based Crop Recommendation</strong><br><br>
+Predicts NPK values from soil data and recommends suitable crops, reducing laboratory effort.
+</div>
+</div>
+</section>
+
+<section>
+<h3>Technical Skills</h3>
+<div class="skills">
+<span>Python</span>
+<span>C</span>
+<span>Java</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>SQL</span>
+</div>
+</section>
+
+<section>
+<h3>Certificates</h3>
+<ul>
+<li>Microsoft Certified – Azure AI Fundamentals (2022)</li>
+<li>CISCO – Programming Essentials in C (2022)</li>
+</ul>
+</section>
+
+<section>
+<h3>Achievements</h3>
+<p>🏆 SR Volleyball Inter-College Winner – 2022</p>
+</section>
+
+<section>
+<h3>Personal Traits</h3>
+<ul>
+<li>Passionate about work</li>
+<li>Ability to work as an individual and in a group</li>
+<li>Ability to adopt and learn new technologies</li>
+<li>Optimistic and deadline oriented</li>
+</ul>
+</section>
+
+<footer>
+© 2025 Bangari Charan Teja | Premium Portfolio
+</footer>
+
+</div>
+
+<script>
+setTimeout(()=>{
+    document.getElementById('intro').style.display="none";
+},2000);
+
+document.addEventListener('click',e=>{
+    const star=document.createElement('div');
+    star.className='star';
+    star.style.left=e.clientX+'px';
+    star.style.top=e.clientY+'px';
+    document.body.appendChild(star);
+    setTimeout(()=>star.remove(),1000);
+});
+</script>
+
+</body>
+</html>
